@@ -52,7 +52,7 @@ exports.config = {
     //
     capabilities: [{
         browserName: 'chrome',
-        browserVersion: '115'
+        browserVersion: '116'
     }],
 
     //

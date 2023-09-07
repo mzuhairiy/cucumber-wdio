@@ -14,6 +14,10 @@ class LoginPage extends Page {
         return $('button[type="submit"]');
     }
 
+    get toastMsg () {
+        return $("div[role='alert']");
+    }
+
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
@@ -21,7 +25,7 @@ class LoginPage extends Page {
     async login (email, password) {
         await this.txtEmail.setValue(email);
         await this.txtPassword.setValue(password);
-        await this.btnSubmit.click();
+        // await this.btnSubmit.click();
     }
 
     open() {
